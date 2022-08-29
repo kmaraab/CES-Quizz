@@ -1,0 +1,25 @@
+.formAnimation {
+    & input {
+        &:active, &:focus {
+            border: 1px solid $primaryColor;
+        }
+        &:not(:focus):invalid {
+            color: white;
+            border: 1px solid $cd-danger;
+            // animation-iteration-count est directement intégré dans la propriété raccourcie animation:
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+        }
+    }
+    
+}
+
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+}

@@ -1,0 +1,35 @@
+@import "../mixins/mixins";
+.fullName{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    width: 100%;
+}
+
+.inputStyles{
+    width: 100%;
+    padding: 4%;
+    border: solid #cfcfcf 1px;
+    border-radius: 50px;
+    margin-right: 2%;
+}
+
+.inputStylesOneLine{
+    padding: 3%;
+}
+
+.titleForm{
+    @include defaultH2styles;
+    padding-bottom: 0px;
+}
+
+.descriptionForm{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10%;
+}
+
+.inputCase:focus{
+    outline: none !important;
+    border: solid $primaryColor 1px;
+}

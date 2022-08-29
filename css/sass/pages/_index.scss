@@ -1,0 +1,98 @@
+@import "../layout/polices";
+
+body{
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    body{
+        display: block;
+        font-family: $principalePolice;
+        line-height: normal;
+    }
+    h2{
+        font-family: $secondaryPolice;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2px;
+        background-color: $primaryColor;
+        color: white;
+        padding: 4%;
+        border-radius: inherit;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+    .commentParticiperTitle{
+        background-color: $secondaryColor; 
+    }
+
+    .prixAgagnerTitle{
+        background-color: $thirdlyColor; 
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & #logo{
+            width: 150px;
+            text-align: center;
+            margin-top: 40%;
+        }
+    }
+    .description{
+        padding: 2% 8% 0% 8%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .prixAgagner{
+        margin-bottom: 8%;
+        & h2{
+            margin-bottom: 4%;
+        }
+        & ol{
+            list-style: initial;
+            font-size: 1.1em;
+        }
+    }
+
+    .cadre{
+        border-radius: 3%;
+        box-shadow: 3px 3px 10px #d1d1d1;
+        margin: 5%;
+        padding: 0% 0% 5% 0%;
+    }
+
+    #bouttonSubmit{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bouttonSubmit{
+
+        width: fit-content;
+        font-size: 1.3em;
+        font-weight: bold;
+        display: block;
+        padding: 5% 30%;
+        color: white;
+        border: $primaryColor solid;
+        background: $primaryColor;
+        box-shadow: inset 2px 2px 20px #0a709c;
+        border-radius: 30px;
+        margin: 4% 0% 20% 0%;
+
+    }
+
+    .cgd{
+        margin: 8% 0% 2% 0%;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #conditionsGenerales{
+        width: 20px;
+        height: 20px;
+        margin-right: 3%;
+    }   
+}

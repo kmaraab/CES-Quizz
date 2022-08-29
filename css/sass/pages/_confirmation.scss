@@ -1,0 +1,29 @@
+@import "../mixins/mixins";
+
+.validIcon{
+    display: flex;
+    justify-content: center;
+    & img{
+        width: 70px;
+    }
+}
+
+.titleConfirmation{
+    @include defaultH2styles;
+    padding: 0%;
+}
+
+.descriptionConfirmation{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.buttonOpenGmail{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cadreConfirmePage{
+    padding: 10%;
+    margin-top: 10%;
+}
